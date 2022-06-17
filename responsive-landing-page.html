@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url("images/bg-intro-desktop.png");
+            background-size: contain;
+            background-color: rgba(255, 0, 0, 0.5);
+            width: 100%;
+        }
+        .containter{
+            width: 80%;
+            display: flex;
+            margin: auto;
+            padding: 30px;
+            color: aliceblue;
+        }
+        .div1{
+            min-width: 40%;
+            padding: 70px;
+        }
+        h1{
+            margin-top: 100px;
+            font-size: 50px;
+        }
+        .div2{
+            min-width: 40%;
+            padding: 50px;
+        }
+        .div2 > div {
+            border-radius: 5px 5px 5px 5px;
+            padding: 10px;
+        }
+        .blue1{
+            background-color: rgb(89, 89, 167);
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 0px 5px 0px 0px  rgba(85, 73, 73, 0.5);
+        }
+        form{
+            text-align: center;
+        }
+        .form1{
+            background-color: aliceblue;  
+            margin: 10px auto;
+            box-shadow: 0px 5px 0px 0px  rgba(80, 67, 67, 0.5);
+        }
+        input{
+            color: black;
+            padding: 15px;
+            width: 80%;
+            margin: 10px 10px 10px 10px;
+            border-radius: 5px 5px 5px 5px;
+        }
+        #submit{
+            background-color: rgb(48, 180, 136);
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+            font-size: 13px;
+            width: 90%;
+            box-shadow: 0px 0px 3px 0px  rgba(48, 180, 136, 0.5);
+        }
+        #submit:hover{
+            background-color: darkgreen;
+            color: rgb(51, 41, 41);
+        }
+        small{
+            color: gray;
+            padding: 10px;
+            font: 9px sans-serif;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+        }
+        a:hover{
+            color: black;
+        }
+        /* @media screen {
+            max-width: 600px;
+            
+        } */
+    </style>
+</head>
+<body>
+        <div class="containter">
+        <div class="div1">
+            <h1>Learn to code by watching others</h1>
+            <p>
+            See how experienced developers solve problems in real-time.
+            watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div class="div2">
+            <div class="blue1"> Try it free 7days then $20/mo. thereafter</div>
+            <div class="form1">
+                <form action="2">
+                    <input type="text" id="FirstName" placeholder="FirstName"/>
+                    <br>
+                    <input type="text" id="LastName" placeholder="LastName"/>
+                    <br>
+                    <input type="email" id="email" placeholder="Email"/>
+                    <br>
+                    <input type="password" id="password" placeholder="Password"/>
+                    <br>
+                    <input type="submit" value="Claim your free trail" id="submit">
+                    <br>
+                    <small>By clicking the button you are agreeing to our <a href="#"> Terms and Services</a></small>
+                </form>
+
+            </div>
+            </div>
+        </div>
+</body>
+</html>
